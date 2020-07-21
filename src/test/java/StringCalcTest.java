@@ -23,4 +23,9 @@ public class StringCalcTest {
     public void givenNNumbers_returns_sum(){
         assert(StringCalc.add("1,2,3,4") == 10);
     }
+
+    @Test
+    public void givenNumbersSeparatedByNewLine_returns_sum(){
+        assert(StringCalc.add("1\n2") == 3);
+    }
 }
