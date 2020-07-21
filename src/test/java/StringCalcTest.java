@@ -13,4 +13,9 @@ public class StringCalcTest {
     public void givenNumber_returns_number(){
         assert(StringCalc.add("1") == 1);
     }
+
+    @Test
+    public void givenTwoNumbers_returns_sum(){
+        assert(StringCalc.add("1,2") == 3);
+    }
 }
