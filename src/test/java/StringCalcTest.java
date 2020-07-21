@@ -58,4 +58,9 @@ public class StringCalcTest {
         }
         assert(false);
     }
+
+    @Test
+    public void givenNumbersAboveThousand_is_ignored(){
+        assert(StringCalc.add("//;\n1;1001") == 1);
+    }
 }
