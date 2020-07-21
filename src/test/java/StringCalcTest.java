@@ -28,4 +28,9 @@ public class StringCalcTest {
     public void givenNumbersSeparatedByNewLine_returns_sum(){
         assert(StringCalc.add("1\n2") == 3);
     }
+
+    @Test
+    public void givenNumbersAndDelimiter_returns_sum(){
+        assert(StringCalc.add("//;1;2") == 3);
+    }
 }
