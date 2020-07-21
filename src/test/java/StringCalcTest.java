@@ -31,6 +31,6 @@ public class StringCalcTest {
 
     @Test
     public void givenNumbersAndDelimiter_returns_sum(){
-        assert(StringCalc.add("//;1;2") == 3);
+        assert(StringCalc.add("//;\n1;2") == 3);
     }
 }
