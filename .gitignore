@@ -1,0 +1,6 @@
+**/target
+**/out
+**/ant-output
+**/*.iml
+**/*.log
+**/.idea
