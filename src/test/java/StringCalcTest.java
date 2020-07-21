@@ -46,4 +46,16 @@ public class StringCalcTest {
         }
         assert(false);
     }
+
+    @Test(expected = NegativeNumberException.class)
+    public void givenNegativeNumbers_throws_exception_with_all_negative_numbers(){
+        try {
+            StringCalc.add("//;\n-1;-2");
+        } catch(RuntimeException e){
+            System.out.println(e.getMessage());
+            assert(e.getMessage().contains("-1") && e.getMessage().contains("-2"));
+            throw e;
+        }
+        assert(false);
+    }
 }
