@@ -18,4 +18,9 @@ public class StringCalcTest {
     public void givenTwoNumbers_returns_sum(){
         assert(StringCalc.add("1,2") == 3);
     }
+
+    @Test
+    public void givenNNumbers_returns_sum(){
+        assert(StringCalc.add("1,2,3,4") == 10);
+    }
 }
