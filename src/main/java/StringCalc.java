@@ -16,10 +16,10 @@ public class StringCalc {
             int i = 0, sum = 0;
             for(String num: nums){
                 int n = Integer.parseInt(num);
-                if(n < 0){
+                if(n < 0)
                     negNumbers[i++] = n;
-                }
-                sum += n;
+                if(n <= 1000)
+                    sum += n;
             }
             if(i > 0){
                 StringBuilder msg = new StringBuilder();
